@@ -7,6 +7,7 @@ namespace C_ManagementSystem.Models
 {
     public class JobModel
     {
+
         public string JobID { get; set; }
         public string CustomerID { get; set; }
         public string JobType { get; set; }
