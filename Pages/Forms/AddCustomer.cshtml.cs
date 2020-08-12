@@ -18,10 +18,14 @@ namespace C_ManagementSystem.Pages.Forms
         
 
     public void OnGet()
-        {
+    {
 
-        }
-        
+    }
+
+     public void OnPost()
+     {
+
+     }
    
        
         
