@@ -17,7 +17,7 @@ namespace C_ManagementSystem.Models
         public string LensDesc { get; set; }
         public int Subtotal { get; set; }
         public int Discount { get; set; }
-        public int Total { get; set; }
+        public int Total { get { return Subtotal - Discount; } }
         public bool Tax { get; set; }
     }
 }

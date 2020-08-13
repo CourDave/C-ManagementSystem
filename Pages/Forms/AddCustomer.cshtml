@@ -1,7 +1,7 @@
 ﻿@page
 @model C_ManagementSystem.Pages.Forms.AddCustomerModel
 @using (Html.BeginForm("Calc","Home",FormMethod.Post)) {
-    ViewData["Title"] = "AddCustomer";
+    ViewData["Title"] = "Add Customer";
 }
 
 <h1>Add New Customer</h1>
@@ -47,7 +47,7 @@
 		<input type="number" id="Discount" asp-for="CustomerJob.Discount" placeholder="$0.00" />
 
 		<label for="Total">Total Cost </label>
-		<div  asp-for="CustomerJob.Total">total</div>
+		<input  asp-for="CustomerJob.Total" value=""></input>
 		
 		<input type="checkbox" asp-for="CustomerJob.Tax" placeholder="Tax" /> <label>Tax</label>
 		<br />

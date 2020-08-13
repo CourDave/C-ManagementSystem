@@ -22,13 +22,13 @@ namespace C_ManagementSystem.Pages.Forms
 
     }
 
-     public void OnPost()
+     public IActionResult OnPost()
      {
 
+            return Page();
      }
    
-       
-        
+         
     }
 }
 /*
