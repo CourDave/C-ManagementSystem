@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace C_ManagementSystem.Models
 {
-    public class CustomerModel
+    public class ContactModel
     {
         public string firstName { get; set; }
         public string lastName { get; set; }

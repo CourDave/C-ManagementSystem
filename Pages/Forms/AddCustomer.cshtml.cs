@@ -10,11 +10,11 @@ namespace C_ManagementSystem.Pages.Forms
 {
     public class AddCustomerModel : PageModel
     {
-        [BindProperty]
-        public CustomerModel CustomerContact { get; set; }
-        public CustomerModel CustomerJob { get; set; }
-        public CustomerModel FrameLenses { get; set; }
-   
+
+        [BindProperty] public ContactModel CustomerContact { get; set; }
+        [BindProperty] public Models.JobModel CustomerJob { get; set; }
+        [BindProperty] public Models.FrameAndLensModel FrameLenses { get; set; }
+        
         
 
     public void OnGet()
