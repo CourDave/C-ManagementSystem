@@ -25,11 +25,16 @@ namespace C_ManagementSystem.Pages.Forms
      public IActionResult OnPost()
      {
 
+            if (ModelState.IsValid == false)
+            {
+                return Page();
+            }
             return Page();
      }
    
          
     }
+
 }
 /*
   public IActionResult OnPost()
