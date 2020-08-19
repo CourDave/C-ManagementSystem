@@ -12,8 +12,7 @@ namespace C_ManagementSystem.Pages.Forms
     {
 
         [BindProperty] public ContactModel CustomerContact { get; set; }
-        [BindProperty] public Models.JobModel CustomerJob { get; set; }
-        [BindProperty] public Models.FrameAndLensModel FrameLenses { get; set; }
+        
         
         
 

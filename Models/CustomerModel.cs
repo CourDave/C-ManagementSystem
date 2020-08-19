@@ -7,12 +7,15 @@ namespace C_ManagementSystem.Models
 {
     public class ContactModel
     {
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string phoneNumber { get; set; }
-        public string emailAddress { get; set; }
-        public string dateRegistered { get; set; }
-        public int customerID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string EmailAddress { get; set; }
+        public string DateRegistered { get; set; }
+        public int CustomerID { get; set; }
+
+        public JobModel CustomerJob { get; set; }
+        public FrameAndLensModel FrameLenses { get; set; }
 
     }
 
