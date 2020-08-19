@@ -6,72 +6,18 @@
 }
 
 
-<h1>Add New Customer</h1>
-<form method="post">
-    <div class="form-group col-md-8">
-        <input type="number" disabled asp-for="CustomerContact.customerID" placeholder="00000" />
-        <input type="text" asp-for="CustomerContact.FirstName" placeholder="First Name" />
-        <input type="text" asp-for="CustomerContact.LastName" placeholder="Last Name" />
-        <input type="tel" asp-for="CustomerContact.PhoneNumber" placeholder="Phone Number" />
-        <input type="email" asp-for="CustomerContact.EmailAddress" placeholder="Email Address" />
-        <input type="date" asp-for="CustomerContact.DateRegistered" placeholder="Date" />
-        <br />
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </div>
-</form>
+    <h1>Add New Customer</h1>
+    <form method="post" asp-action="NewCustomers">
+        <div class="form-group col-md-8">
+            <input type="number" disabled asp-for="CustomerContact.CustomerID" placeholder="00000" />
+            <input type="text" asp-for="CustomerContact.FirstName" placeholder="First Name" />
+            <input type="text" asp-for="CustomerContact.LastName" placeholder="Last Name" />
+            <input type="tel" asp-for="CustomerContact.PhoneNumber" placeholder="Phone Number" />
+            <input type="email" asp-for="CustomerContact.EmailAddress" placeholder="Email Address" />
+            <input type="date" asp-for="CustomerContact.DateRegistered" placeholder="Date" />
+            <br />
+            <button name="newCsub" type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
 
-<h1>Repair Jobs</h1>
-<form method="post">
-	<div class="form-group" col-md-8>
-		<label for="JobID">Job ID</label>
-		<input type="number" id="JobID" value="JobID" disabled asp-for="CustomerContact.CustomerJob.JobID" placeholder="1" />
-
-		<label for="CusID">Customer ID</label>
-		<input type="number" id="CusID" value="CusID" disabled asp-for="CustomerContact.CustomerJob.CustomerID" placeholder="00000" />
-
-		<label for="JobDesc">Job Description </label>
-		<input type="text" id="JobDesc" asp-for="CustomerContact.CustomerJob.JobDesc" placeholder="Job Description" />
-
-		<label for="JobDate">Date of Order </label>
-		<input type="date" id="JobDate" asp-for="CustomerContact.CustomerJob.JobDate" placeholder="Date" />
-
-		<label for="FrameDesc">Description of Frame</label>
-		<input type="text" id="FrameDesc" asp-for="CustomerContact.CustomerJob.FrameDesc" placeholder="Enter Breif Description" />
-
-		<label for="LensDesc">Description of Lenses </label>
-		<input type="text" id="LensDesc" asp-for="CustomerContact.CustomerJob.LensDesc" placeholder="Enter Breif Description" />
-
-		<label for="Subtotal">Subtotal: </label>
-		<input type="number" value="" name="Subtotal" id="Subtotal" asp-for="CustomerContact.CustomerJob.Subtotal" placeholder="$0.00" />
-
-		<label for="Discount">Discounts</label>
-		<input type="number" value="" name="Discount" id="Discount" asp-for="CustomerContact.CustomerJob.Discount" placeholder="$0.00" />
-
-		<label for="Total">Total Cost </label>
-		<input asp-for="CustomerContact.CustomerJob.Total" name="Total" id="Total" value="" />
-
-		<input type="checkbox" asp-for="CustomerContact.CustomerJob.Tax" placeholder="Tax" /> <label>Tax</label>
-		<br />
-		<input name="__RequestVerificationToken" type="hidden" value="<token_generated_here>" />
-		<button type="reset">Reset</button>
-	</div>
-</form>
-
-
-<h1>New Frame and Lenses</h1>
-<form method="post">
-    <div class="form-group col-md-8">
-        <label for="LensDesc">Lens Description</label>
-        <input id="LensDesc" asp-for="CustomerContact.CustomerJob.LensDesc" placeholder="Enter Breif Description" />
-
-        <label for="FrameDesc">Frames Description</label>
-        <input id="FrameDesc" asp-for="CustomerContact.CustomerJob.FrameDesc" placeholder="Enter Breif Description" />
-
-        <label for="LensCost">Lens Cost</label>
-        <input id="LensCost" asp-for="CustomerContact.FrameLenses.LensCost" placeholder="$0.00" />
-
-        <label for="FrameCost">Frames Cost</label>
-        <input id="FrameCost" asp-for="CustomerContact.FrameLenses.FrameCost" placeholder="$0.00" />
-    </div>
-</form>
