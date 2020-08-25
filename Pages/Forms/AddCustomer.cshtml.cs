@@ -14,10 +14,10 @@ namespace C_ManagementSystem.Pages.Forms
         [BindProperty] public ContactModel CustomerContact { get; set; }
 
 
-        public void OnGet()
-    {
+     public void OnGet()
+     {
 
-    }
+     }
 
      public IActionResult OnPost()
      {

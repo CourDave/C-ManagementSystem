@@ -5,38 +5,39 @@
 }
 
 <h1>Repair Jobs</h1>
-<form method="post">
-    <div class="form-group col-md-8">
-        <label for="JobID">Job ID</label>
-        <input type="number" id="JobID" value="JobID" disabled asp-for="CustomerJob.JobID" placeholder="1" />
 
-        <label for="CusID">Customer ID</label>
-        <input type="number" id="CusID" value="CusID" disabled asp-for="CustomerJob.CustomerID" placeholder="00000" />
+<div class="row">
+	<form method="post">
+		<div class="form-group col-md-auto">
+			Job ID:
+			<input type="number" id="JobID" value="JobID" asp-for="CustomerJob.JobID" placeholder="1" /><br />
 
-        <label for="JobDesc">Job Description </label>
-        <input type="text" id="JobDesc" asp-for="CustomerJob.JobDesc" placeholder="Job Description" />
+			Customer ID:
+			<input type="number" id="CusID" value="CusID" disabled asp-for="CustomerJob.CustomerID" placeholder="00000" /><br />
 
-        <label for="JobDate">Date of Order </label>
-        <input type="date" id="JobDate" asp-for="CustomerJob.JobDate" placeholder="Date" />
+			Frame Description:
+			<input type="text" id="FrameDesc" asp-for="CustomerJob.FrameDesc" value=" " placeholder="Frame Description" /><br />
 
-        <label for="FrameDesc">Description of Frame</label>
-        <input type="text" id="FrameDesc" asp-for="CustomerJob.FrameDesc" placeholder="Enter Breif Description" />
+			Job Description:
+			<input type="text" id="JobDesc" asp-for="CustomerJob.JobDesc" value=" " placeholder="Job Description" /><br />
 
-        <label for="LensDesc">Description of Lenses </label>
-        <input type="text" id="LensDesc" asp-for="CustomerJob.LensDesc" placeholder="Enter Breif Description" />
+			New Frame?:
+			<input type="text" id="NewFrame?" asp-for="CustomerJob.AdditionalFrame" value=" " placeholder="New Frame?" /><br />
 
-        <label for="Subtotal">Subtotal: </label>
-        <input type="number" value="" name="Subtotal" id="Subtotal" asp-for="CustomerJob.Subtotal" placeholder="$0.00" />
+			Lab Location:
+			<input type="text" id="Lab" asp-for="CustomerJob.Lab" value=" " placeholder="Which Lab?" /><br />
 
-        <label for="Discount">Discounts</label>
-        <input type="number" value="" name="Discount" id="Discount" asp-for="CustomerJob.Discount" placeholder="$0.00" />
+			Subtotal:
+			<input type="number" id="SubTotal" asp-for="CustomerJob.Subtotal" value="$ " /><br />
 
-        <label for="Total">Total Cost :</label>
+			Discount:
+			<input type="number" id="Discount" asp-for="CustomerJob.Discount" value="$ " /><br />
 
-        <input type="checkbox" asp-for="CustomerJob.Tax" placeholder="Tax" /> <label>Tax</label>
-        <br />
-        <input name="__RequestVerificationToken" type="hidden" value="<token_generated_here>" />
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </div>
-</form>
+			Total:
+			<p>Remaining Balance: @Html.Display("CustomerJob.Total")</p>
+
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</div>
+	</form>
+</div>
