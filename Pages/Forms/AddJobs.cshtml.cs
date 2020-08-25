@@ -12,7 +12,7 @@ namespace C_ManagementSystem.Pages.Forms
     public class AddJobsModel : PageModel
     {
 
-        [BindProperty] 
+        [BindProperty]
         public JobModel CustomerJob { get; set; }
 
         public void OnGet()
@@ -20,6 +20,19 @@ namespace C_ManagementSystem.Pages.Forms
         }
         public IActionResult OnPost()
         {
+            double tax = 0.0888;
+            double total = 0;
+
+
+            total = CustomerJob.Subtotal - CustomerJob.Discount;
+            tax = tax * total;
+
+            total = total + tax;
+            CustomerJob.Total = total;
+
+
+
+
 
             if (ModelState.IsValid == false)
             {
@@ -27,6 +40,8 @@ namespace C_ManagementSystem.Pages.Forms
             }
             return Page();
         }
-       
+
+
+
     }
 }

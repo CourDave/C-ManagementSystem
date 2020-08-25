@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C_ManagementSystem.Pages.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,6 +19,8 @@ namespace C_ManagementSystem.Models
 
         public class JobModel : ContactModel
         {
+                   
+            public bool NYSTax { get; set; }
             public string JobID { get; set; }
             public string Lab { get; set; }
             public string JobDesc { get; set; }
@@ -27,10 +30,12 @@ namespace C_ManagementSystem.Models
             public string LensDesc { get; set; }
             public float Subtotal { get; set; }
             public float Discount { get; set; }
-            public float Total { get { return Subtotal - Discount; } }
-            public float Tax { get; set; }
-           
-        }
+            public double Total { get; set; }
+        //public double Total { get { return Subtotal - Discount; } }
+        //public double Total { get { return ((Subtotal - Discount) + (Tax * Total)); } }
+        // public double Tax { return (0.0888 * Total); } 
+
+    }
 
         public class FrameAndLensModel : JobModel
         {
