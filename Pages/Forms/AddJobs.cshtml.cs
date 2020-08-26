@@ -24,14 +24,21 @@ namespace C_ManagementSystem.Pages.Forms
             double total = 0;
 
 
-            total = CustomerJob.Subtotal - CustomerJob.Discount;
-            tax = tax * total;
+            
 
-            total = total + tax;
-            CustomerJob.Total = total;
+            if (CustomerJob.NYSTax == true)
+            {
+                total = CustomerJob.Subtotal - CustomerJob.Discount;
+                tax = tax * total;
 
-
-
+                total = total + tax;
+                CustomerJob.Total = total;
+            }
+            else
+            {
+                total = CustomerJob.Subtotal - CustomerJob.Discount;
+                CustomerJob.Total = total;
+            }
 
 
             if (ModelState.IsValid == false)

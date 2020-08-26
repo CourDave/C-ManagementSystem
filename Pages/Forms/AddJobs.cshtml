@@ -10,7 +10,7 @@
 	<form method="post" asp-action="NewJob">
         <div class="form-group col-md-auto">
             Job ID:
-            <input type="number" id="JobID" value="JobID" asp-for="CustomerJob.JobID" placeholder="1" /><br />
+            <input type="number" id="JobID" value="JobID" disabled asp-for="CustomerJob.JobID" placeholder="1" /><br />
 
             Customer ID:
             <input type="number" id="CusID" value="CusID" disabled asp-for="CustomerJob.CustomerID" placeholder="00000" /><br />
@@ -36,7 +36,6 @@
             Apply NYS Tax?:
             <input type="checkbox" id="Discount" asp-for="CustomerJob.NYSTax"/><br />
 
-            Total:
             <p>Remaining Balance: @Html.Display("CustomerJob.Total")</p>
 
             <button type="submit">Submit</button>
