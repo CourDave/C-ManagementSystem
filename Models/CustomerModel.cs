@@ -14,6 +14,7 @@ namespace C_ManagementSystem.Models
             public string EmailAddress { get; set; }
             public string DateRegistered { get; set; }
             public int CustomerID { get; set; }
+            public string CompanyName { get; set; }
 
         }
 
@@ -31,15 +32,27 @@ namespace C_ManagementSystem.Models
             public float Subtotal { get; set; }
             public float Discount { get; set; }
             public double Total { get; set; }
-        //public double Total { get { return Subtotal - Discount; } }
-        //public double Total { get { return ((Subtotal - Discount) + (Tax * Total)); } }
-        // public double Tax { return (0.0888 * Total); } 
+       
 
     }
 
         public class FrameAndLensModel : JobModel
         {
+            
             public string LensCost { get; set; }
             public string FrameCost { get; set; }
-        }
+            public string ODSph { get; set; }
+            public string ODCyl { get; set; }
+            public string ODAxis { get; set; }
+            
+
+            public string OSSph { get; set; }
+            public string OSCyl { get; set; }
+            public string OSAxis { get; set; }
+            public string Pd { get; set; }
+            public string WPd { get; set; }
+            public string Height { get; set; }
+            public string AddPower { get; set; }
+
+    }
     }
