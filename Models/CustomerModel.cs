@@ -36,7 +36,7 @@ namespace C_ManagementSystem.Models
 
     }
 
-        public class FrameAndLensModel : JobModel
+        public class FrameLensModel : JobModel
         {
             
             public string LensCost { get; set; }
@@ -53,6 +53,6 @@ namespace C_ManagementSystem.Models
             public string WPd { get; set; }
             public string Height { get; set; }
             public string AddPower { get; set; }
-
+            public string Notes { get; set; }
     }
     }

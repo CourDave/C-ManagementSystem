@@ -2,3 +2,20 @@
 @model C_ManagementSystem.Pages.Forms.AddPrescriptionModel
 @{
 }
+
+<h1>Add Rx</h1>
+<form method="post" asp-action="NewRx">
+    <div class="form-row p-3"><p>Right Eye:</p>
+        <div class="col"><input type="text" class="col-sm-3" asp-for="FrameLenses.ODSph" placeholder="Sph" /></div>
+        <div class="col"><input type="text" class="col-sm-3" asp-for="FrameLenses.ODCyl" placeholder="Cyl" /></div>
+        <div class="col"><input type="text" class="col-sm-3" asp-for="FrameLenses.ODAxis" placeholder="Axis" /></div>
+    </div>
+    <div class="form-row"><p>Left Eye:</p>
+        <div class="col"><input type="text" class="col-sm-3" asp-for="FrameLenses.OSSph" placeholder="OS Spherical" /></div>
+        <div class="col"><input type="text" class="col-sm-3" asp-for="FrameLenses.OSCyl" placeholder="OS Cylander" /></div>
+        <div class="col"><input type="text" class="col-sm-3" asp-for="FrameLenses.OSAxis" placeholder="OS Axis" /></div>
+    </div>
+    <br />
+    <button name="SubmitRx" type="submit" class="btn btn-info">Submit</button>
+    <button type="reset" class="btn btn-danger">Reset</button>
+</form>
