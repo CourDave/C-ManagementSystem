@@ -6,36 +6,37 @@
 
 <h1>Add Rx</h1>
 <form method="post" asp-action="NewRx">
-    <div class="form-inline">
-        <label>Right Eye</label>
-        <div class="m-1"><input type="text" asp-for="FrameLenses.ODSph" placeholder="Sph" /></div>
-        <div class="m-1"><input type="text" asp-for="FrameLenses.ODCyl" placeholder="Cyl" /></div>
-        <div class="m-1"><input type="text" asp-for="FrameLenses.ODAxis" placeholder="Axis" /></div>
+    <div class="container">
+        <div class="form-inline">
+            <label>Right Eye</label>
+            <div class="m-1"><input type="text" asp-for="FrameLenses.ODSph" placeholder="Sph" /></div>
+            <div class="m-1"><input type="text" asp-for="FrameLenses.ODCyl" placeholder="Cyl" /></div>
+            <div class="m-1"><input type="text" asp-for="FrameLenses.ODAxis" placeholder="Axis" /></div>
 
+        </div>
+        <div class="form-inline">
+            <label>Left Eye</label>
+            <div class="m-1 pl-2"><input type="text" asp-for="FrameLenses.OSSph" placeholder="OS Spherical" /></div>
+            <div class="m-1"><input type="text" asp-for="FrameLenses.OSCyl" placeholder="OS Cylander" /></div>
+            <div class="m-1"><input type="text" asp-for="FrameLenses.OSAxis" placeholder="OS Axis" /></div>
+        </div>
+
+
+        <div class="form-group pt-5 pb-1">
+            <label for="PdValue" class="mb-0">PD</label>
+            <div class="pb-2"><input class="form-control-3" type="text" asp-for="FrameLenses.PatientPD" placeholder="Enter PD" /></div>
+
+            <label for="AddPwr" class="mb-0">Add Power</label>
+            <div class="pb-2"><input class="form-control-3" type="text" asp-for="FrameLenses.AddPower" placeholder="Add Power" /></div>
+
+            <label for="Height" class="mb-0">Height</label>
+            <div class=""><input class="form-control-3" type="text" asp-for="FrameLenses.Height" placeholder="Height" /></div><br />
+
+            <textarea asp-for="FrameLenses.TextNotes" rows="5" cols="1" style="width:70%" placeholder="Enter Additional Notes"></textarea><br />
+        </div>
+
+        <br />
+        <button name="SubmitRx" type="submit" class="btn btn-info">Submit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
     </div>
-    <div class="form-inline">
-        <label>Left Eye</label>
-        <div class="m-1 pl-2"><input type="text" asp-for="FrameLenses.OSSph" placeholder="OS Spherical" /></div>
-        <div class="m-1"><input type="text" asp-for="FrameLenses.OSCyl" placeholder="OS Cylander" /></div>
-        <div class="m-1"><input type="text" asp-for="FrameLenses.OSAxis" placeholder="OS Axis" /></div>
-    </div>
-
-
-    <div class="form-group pt-5 pb-1">
-        <label for="PdValue" class="mb-0">PD</label>
-        <div class="pb-2"><input name="PdValue" class="form-control-3" id="PdValue" type="text" asp-for="FrameLenses.Pd" placeholder="Enter PD" /></div>
-
-
-        <label for="AddPwr" class="mb-0">Add Power</label>
-        <div class="pb-2"><input name="AddPwr" class="form-control-3" id="AddPwr" type="text" asp-for="FrameLenses.AddPower" placeholder="Add Power" /></div>
-
-        <label for="Height" class="mb-0">Height</label>
-        <div class=""><input name="Height" class="form-control-3" id="Height" type="text" asp-for="FrameLenses.Height" placeholder="Height" /></div><br />
-
-        <textarea rows="5" cols="1" name="notes" style="width:70%" placeholder="Enter Additional Notes"></textarea><br />
-    </div>
-   
-    <br />
-    <button name="SubmitRx" type="submit" class="btn btn-info">Submit</button>
-    <button type="reset" class="btn btn-danger">Reset</button>
 </form>

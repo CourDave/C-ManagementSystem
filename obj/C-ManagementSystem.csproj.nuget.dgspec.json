@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/davidlewis/Documents/C-ManagementSystem/C-ManagementSystem.csproj": {}
+    "C:\\Users\\vista\\Documents\\GitHub\\C-ManagementSystem\\C-ManagementSystem.csproj": {}
   },
   "projects": {
-    "/Users/davidlewis/Documents/C-ManagementSystem/C-ManagementSystem.csproj": {
+    "C:\\Users\\vista\\Documents\\GitHub\\C-ManagementSystem\\C-ManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/davidlewis/Documents/C-ManagementSystem/C-ManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\vista\\Documents\\GitHub\\C-ManagementSystem\\C-ManagementSystem.csproj",
         "projectName": "C-ManagementSystem",
-        "projectPath": "/Users/davidlewis/Documents/C-ManagementSystem/C-ManagementSystem.csproj",
-        "packagesPath": "/Users/davidlewis/.nuget/packages/",
-        "outputPath": "/Users/davidlewis/Documents/C-ManagementSystem/obj/",
+        "projectPath": "C:\\Users\\vista\\Documents\\GitHub\\C-ManagementSystem\\C-ManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\vista\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vista\\Documents\\GitHub\\C-ManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/davidlewis/.config/NuGet/NuGet.Config"
+          "C:\\Users\\vista\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
