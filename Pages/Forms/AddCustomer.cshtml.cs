@@ -10,7 +10,6 @@ namespace C_ManagementSystem.Pages.Forms
 {
     public class AddCustomerModel : PageModel
     {
-
         [BindProperty] public ContactModel CustomerContact { get; set; }
 
 
@@ -21,6 +20,7 @@ namespace C_ManagementSystem.Pages.Forms
 
      public IActionResult OnPost()
      {
+
 
             if (ModelState.IsValid == false)
             {
@@ -33,12 +33,4 @@ namespace C_ManagementSystem.Pages.Forms
     }
 
 }
-/*
-  public IActionResult OnPost()
-        {
-            if (ModelState.IsValid == false)
-            {
-                return Page();
-            }
-            return RedirectToPage("/Index", new { CustomerContact.firstName });
- */
+

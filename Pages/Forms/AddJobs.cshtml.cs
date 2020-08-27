@@ -23,7 +23,9 @@ namespace C_ManagementSystem.Pages.Forms
             double tax = 0.0888;
             double total = 0;
 
-
+            string FullName = CustomerJob.FirstName + " " + CustomerJob.LastName;
+ 
+                
             
 
             if (CustomerJob.NYSTax == true)
@@ -47,7 +49,6 @@ namespace C_ManagementSystem.Pages.Forms
             }
             return Page();
         }
-
 
 
     }

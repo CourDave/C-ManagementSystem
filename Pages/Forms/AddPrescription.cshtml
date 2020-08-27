@@ -7,11 +7,16 @@
 <h1>Add Rx</h1>
 <form method="post" asp-action="NewRx">
     <div class="container">
+        <div id="ContactContainer">
+            <p>Cus ID @Html.Display("FrameLenses.CustomerID")</p><br />
+            <p>Cus Name @Html.Display("FrameLenses.FirstName" + "FrameLenses.LastName")</p>
+        </div>
         <div class="form-inline">
             <label>Right Eye</label>
             <div class="m-1"><input type="text" asp-for="FrameLenses.ODSph" placeholder="Sph" /></div>
             <div class="m-1"><input type="text" asp-for="FrameLenses.ODCyl" placeholder="Cyl" /></div>
             <div class="m-1"><input type="text" asp-for="FrameLenses.ODAxis" placeholder="Axis" /></div>
+
 
         </div>
         <div class="form-inline">
@@ -38,5 +43,8 @@
         <br />
         <button name="SubmitRx" type="submit" class="btn btn-info">Submit</button>
         <button type="reset" class="btn btn-danger">Reset</button>
+
     </div>
+    <br />
+    <br />
 </form>

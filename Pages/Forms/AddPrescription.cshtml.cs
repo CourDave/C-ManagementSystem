@@ -5,12 +5,13 @@ using System.Threading.Tasks;
 using C_ManagementSystem.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace C_ManagementSystem.Pages.Forms
 {
     public class AddPrescriptionModel : PageModel
     {
-
+    
         [BindProperty]
         public RxModel FrameLenses { get; set; }
         public void OnGet()

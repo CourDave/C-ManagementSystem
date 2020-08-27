@@ -15,6 +15,7 @@ namespace C_ManagementSystem.Models
             public string DateRegistered { get; set; }
             public int CustomerID { get; set; }
             public string CompanyName { get; set; }
+           
 
         }
 

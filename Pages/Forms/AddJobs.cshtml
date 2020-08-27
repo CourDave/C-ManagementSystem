@@ -34,12 +34,13 @@
             <input type="number" id="Discount" asp-for="CustomerJob.Discount" value="$ " /><br />
 
             Apply NYS Tax?:
-            <input type="checkbox" id="Discount" asp-for="CustomerJob.NYSTax"/><br />
+            <input type="checkbox" id="Discount" asp-for="CustomerJob.NYSTax" /><br />
 
-            <p>Remaining Balance: @Html.Display("CustomerJob.Total")</p>
+            
+                <!-- <p>Remaining Balance: @Html.Display("CustomerJob.Total")</p> @Html.Display("CustomerJob.JobDesc") -->
 
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
         </div>
 	</form>
 </div>
