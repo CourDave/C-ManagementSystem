@@ -12,7 +12,7 @@ namespace C_ManagementSystem.Pages.Forms
     {
 
         [BindProperty]
-        public FrameLensModel FrameLenses { get; set; }
+        public RxModel FrameLenses { get; set; }
         public void OnGet()
         {
         }

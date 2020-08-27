@@ -32,15 +32,15 @@ namespace C_ManagementSystem.Models
             public float Subtotal { get; set; }
             public float Discount { get; set; }
             public double Total { get; set; }
-       
+            public string LensCost { get; set; }
+            public string FrameCost { get; set; }
+
 
     }
 
-        public class FrameLensModel : JobModel
+        public class RxModel : ContactModel
         {
-            
-            public string LensCost { get; set; }
-            public string FrameCost { get; set; }
+
             public string ODSph { get; set; }
             public string ODCyl { get; set; }
             public string ODAxis { get; set; }
@@ -49,10 +49,10 @@ namespace C_ManagementSystem.Models
             public string OSSph { get; set; }
             public string OSCyl { get; set; }
             public string OSAxis { get; set; }
+
             public string Pd { get; set; }
-            public string WPd { get; set; }
             public string Height { get; set; }
             public string AddPower { get; set; }
             public string Notes { get; set; }
     }
-    }
+}
