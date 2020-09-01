@@ -10,7 +10,8 @@ namespace C_ManagementSystem.Pages.Forms
 {
     public class FrameAndLensesModel : PageModel
     {
-      
+      [BindProperty]public JobModel jm { get; set; }
+
         public void OnGet()
         {
         }

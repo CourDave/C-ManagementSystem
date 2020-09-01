@@ -3,3 +3,23 @@
 @{
 }
 
+<h1>Sale</h1>
+<form method="post" asp-action="Sales">
+    <div class="container" id="FrameLensID">
+        <div class="form-inline">
+            <label>New Lenses</label>
+            <div class="m-1"><input type="text" asp-for="jm.LensDesc" placeholder="Lens" /></div>
+            <div class="m-1"><input type="text" asp-for="jm.LensCost" placeholder="$" /></div>
+        </div>
+         <div class="form-inline">
+             <label>New Frame</label>
+             <div class="m-2"><input type="text" asp-for="jm.FrameDesc" placeholder="Frame" /></div>
+             <div class="m-1"><input type="text" asp-for="jm.FrameCost" placeholder="$" /></div>
+         </div>
+        
+        <input type="button" value="Add Dynamic" onclick="DynamicText()"></>
+        <button name="SubmitSale" type="submit" class="btn btn-info">Submit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+
+    </div>
+</form>
