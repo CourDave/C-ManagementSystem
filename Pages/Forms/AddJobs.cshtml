@@ -13,16 +13,13 @@
             <input type="number" id="JobID" value="JobID" disabled asp-for="CustomerJob.JobID" placeholder="1" /><br />
 
             Customer ID:
-            <input type="number" id="CusID" value="CusID" disabled asp-for="CustomerJob.CustomerID" placeholder="00000" /><br />
+            <input type="number" id="CusID" value="CusID" disabled asp-for="cm.CustomerID" placeholder="00000" /><br />
 
             Frame Description:
             <input type="text" id="FrameDesc" asp-for="CustomerJob.FrameDesc" value=" " placeholder="Frame Description" /><br />
 
             Job Description:
             <input type="text" id="JobDesc" asp-for="CustomerJob.JobDesc" value=" " placeholder="Job Description" /><br />
-
-            New Frame?:
-            <input type="text" id="NewFrame?" asp-for="CustomerJob.AdditionalFrame" value=" " placeholder="Additional Frame" /><br />
 
             Lab Location:
             <input type="text" id="Lab" asp-for="CustomerJob.Lab" value=" " placeholder="Which Lab?" /><br />

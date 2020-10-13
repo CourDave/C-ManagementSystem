@@ -14,6 +14,7 @@ namespace C_ManagementSystem.Pages.Forms
 
         [BindProperty]
         public JobModel CustomerJob { get; set; }
+        public ContactModel cm { get; set; }
 
         public void OnGet()
         {
@@ -23,7 +24,6 @@ namespace C_ManagementSystem.Pages.Forms
             double tax = 0.0888;
             double total = 0;
 
-            string FullName = CustomerJob.FirstName + " " + CustomerJob.LastName;
  
                 
             
